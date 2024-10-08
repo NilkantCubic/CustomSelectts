@@ -40,4 +40,19 @@ declare const MyInfo: React.FC<alertProps>;
 declare const MyWarning: React.FC<PromptProps>;
 declare const MyQuestion: React.FC<PromptProps>;
 
-export { CustomSelect, MyError, MyInfo, MyQuestion, MySuccess, MyWarning };
+declare const RenderHTML: ({ htmlString }: {
+    htmlString: any;
+}) => any;
+
+interface SelectedDates {
+    startdate: any;
+    enddate: any;
+}
+interface DateRangePickerProps {
+    onChange: (selection: any) => void;
+    onDismiss: () => void;
+    selectedDates?: SelectedDates;
+}
+declare const DateRangePicker: React__default.FC<DateRangePickerProps>;
+
+export { CustomSelect, DateRangePicker, MyError, MyInfo, MyQuestion, MySuccess, MyWarning, RenderHTML };

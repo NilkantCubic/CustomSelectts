@@ -1,0 +1,153 @@
+.dateRangePicker {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 8px;
+  background-color: var(--lightThemePanelBGSwitcher);
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.selectedDates {
+  display: flex;
+  justify-content: left;
+  width: 100%;
+  gap: 8px;
+  padding: 0px 10px;
+}
+
+.dateInput {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  cursor: pointer;
+  padding: 0px 10px;
+  width: 45%;
+}
+
+
+.dateInput label {
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+.dateInput input {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid var(--lightThemeBorderColor);
+}
+.calendarContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.calendarWrapper {
+  margin: 10px;
+  background: var(--lightThemeBGcolorWhite);
+  padding: 10px;
+}
+
+.calendarHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 10px;
+  background: var(--lightThemeBGcolorWhite);
+  padding: 1px 0px;
+  border: 1px solid var(--lightThemeBorderColor);
+  border-radius: 2px;
+}
+.calendarHeader span {
+  font-weight: 600;
+}
+.calendarHeader button {
+  padding: 5px 10px;
+  font-weight: 600;
+  color: var(--lightThemePivotTextBlack);
+  cursor: pointer;
+  border: none;
+  background-color: unset;
+}
+.calendar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--lightThemeBGcolorWhite);
+  padding: 10px;
+}
+
+.calendarWeek {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.calendarWeekdays {
+  display: flex;
+  justify-content: unset;
+  width: 100%;
+}
+.WeekDay {
+  font-weight: 600;
+}
+.calendarDay {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin: 2px;
+}
+
+.calendarDay:hover {
+  background-color: var(--lightdarkBG);
+  color: var(--lightThemeBGcolorWhite);
+  border-radius: 50%;
+}
+
+.selected {
+  background-color: var(--lightdarkBG);
+  color: white;
+  border-radius: 50%;
+  font-weight: 700;
+}
+.maindaterange {
+  display: flex;
+}
+.inRange {
+  background-color: var(--lightdarkBGTable);
+}
+
+.empty {
+  cursor: default;
+}
+
+.okButton {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: var(--lightThemePivotTextBlack);
+  color: var(--lightThemeBGcolorWhite);
+  border: none;
+  width: 80px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+  font-size: 14px;
+}
+.paretok {
+  display: flex;
+
+  justify-content: left;
+}
+
+.okButton:hover {
+  background-color: var(--lightdarkBG);
+}
+.inputdatebox:focus-visible {
+  border: 1px solid !important;
+  border-color: var(--lightThemeBorderColor) !important;
+  outline: unset;
+}

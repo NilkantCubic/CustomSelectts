@@ -3,12 +3,12 @@ import "./Customselect.css";
 import CustomInput from "./CustomInput";
 
 interface Option {
-  value: string; // or the appropriate type for your values
+  value: string; 
   label: string;
-  key?: string; // optional property
-  text?: string; // optional property
-  persona?: any; // optional property
-  [key: string]: any; // allows additional properties
+  key?: string; 
+  text?: string; 
+  persona?: any; 
+  [key: string]: any; 
 }
 
 interface CustomSelectProps {
