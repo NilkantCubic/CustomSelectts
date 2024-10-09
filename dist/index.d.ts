@@ -1,5 +1,6 @@
 import * as React from 'react';
 import React__default from 'react';
+import moment from 'moment';
 
 interface Option {
     value: string;
@@ -55,4 +56,7 @@ interface DateRangePickerProps {
 }
 declare const DateRangePicker: React__default.FC<DateRangePickerProps>;
 
-export { CustomSelect, DateRangePicker, MyError, MyInfo, MyQuestion, MySuccess, MyWarning, RenderHTML };
+declare const Apps365moment: typeof moment;
+declare function FormatDate(dateInput: any, desiredFormat?: string): string;
+
+export { Apps365moment, CustomSelect, DateRangePicker, FormatDate, MyError, MyInfo, MyQuestion, MySuccess, MyWarning, RenderHTML };
